@@ -1,0 +1,10 @@
+{
+  "presets": [
+    ["es2015", { "modules": false }],
+    "stage-2",
+    "es2015-rollup"
+  ],
+  "plugins": [
+  ],
+  "comments": false
+}
