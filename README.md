@@ -61,7 +61,6 @@ The editor is a component that accepts these props:
 
 * `wasUpdated`, an event that will fire whenever the underlying document changes. It is called with the editor state and schema.
 
-
 #### Getting Help
 
 If you'd like to report a bug or request a feature, please [open an issue](https://github.com/studbits/vue-prose/issues).
