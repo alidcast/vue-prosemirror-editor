@@ -1,7 +1,8 @@
 # Vue Prose
 
-A minimal [Prosemirror](https://prosemirror.net/) Wrapper for Vue.js
+*This plugin was made with love with the team at [studbits.com](https://studbits.com/).*
 
+A minimal [Prosemirror](https://prosemirror.net/) Wrapper for Vue.js
 
 ### Installation
 
