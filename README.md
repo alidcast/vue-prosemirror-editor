@@ -64,3 +64,9 @@ The editor is a component that accepts these props:
 #### Getting Help
 
 If you'd like to report a bug or request a feature, please [open an issue](https://github.com/studbits/vue-prose/issues).
+
+### License
+
+[MIT](./LICENSE)
+
+Copyright (c) 2017 Studbits
