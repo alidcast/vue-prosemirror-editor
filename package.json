@@ -1,7 +1,7 @@
 {
-  "name": "vue-prose",
+  "name": "vue-prosemirror-editor",
   "version": "0.1.6",
-  "description": "vue prosemirror wrapper",
+  "description": "vue prosemirror editor wrapper",
   "main": "dist/index.js",
   "author": "Alid Castano",
   "license": "MIT",
