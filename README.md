@@ -6,7 +6,7 @@ A minimal [Prosemirror](https://prosemirror.net/) Wrapper for Vue.js
 ### Installation
 
 ```
-npm install vue-prose
+npm install vue-prosemirror-editor
 ```
 
 The `vue-prose` will install prosemirror's dependencies.
@@ -22,7 +22,7 @@ The most basic usage with an empty editor:
 <Editor />
 
 // script
-import Editor from "vue-prose"
+import Editor from "vue-prosemirror-editor"
 
 export default {
   components: {
