@@ -1,6 +1,6 @@
 # Vue Prose
 
-*This plugin was made with love with the team at [studbits.com](https://studbits.com/).*
+*This plugin was made while creating the editor for [studbits.com](https://studbits.com/). We hope you find it useful!*
 
 A minimal [Prosemirror](https://prosemirror.net/) Wrapper for Vue.js
 
