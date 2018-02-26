@@ -1,9 +1,10 @@
 import Editor from './Editor.vue'
-import { findNode } from './utils'
+import { ComponentView, findNode } from './utils'
 
 export default Editor
 
 export {
   Editor,
+  ComponentView,
   findNode
 }

@@ -1,6 +1,6 @@
 {
   "name": "vue-prosemirror-editor",
-  "version": "0.1.6",
+  "version": "0.3.0",
   "description": "vue prosemirror editor wrapper",
   "main": "dist/index.js",
   "author": "Alid Castano",

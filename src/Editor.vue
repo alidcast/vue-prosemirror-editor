@@ -12,6 +12,7 @@ import { EditorView } from 'prosemirror-view'
 import { Schema, DOMParser } from 'prosemirror-model'
 import builtInPlugins from './plugins/index'
 import builtInSchema from './schema/index'
+import { initNodeViews } from './helpers'
 
 const WILL_CREATE_EVENT = 'willCreate'
 const DID_CREATE_EVENT = 'didCreate'
@@ -67,7 +68,7 @@ export default {
       return new EditorView(this.$refs.editor, {
         state: this.editor.state,
         dispatchTransaction: this.dispatchTransaction,
-        nodeViews: this.nodeViews,
+        nodeViews: initNodeViews(this.nodeViews),
         ...this.editorProps
       })
     },
@@ -85,7 +86,7 @@ export default {
           ...this.plugins.map(item => {
             const plugin = typeof item !== 'function'
               ? item
-              : item({ schema, dispatchTransaction: this.dispatchTransaction })
+              : item(this.editor)
             return new Plugin(plugin)
           }),
           new Plugin({
