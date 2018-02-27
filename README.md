@@ -46,7 +46,7 @@ The editor is a component that accepts these props:
 
 * `keyCommands`, a Function, that passes the editor schema so you can register any additional editor key commands.
 
-* `inputs`, an Array, any custom editor input rules.
+* `inputRules`, an Array, any custom editor input rules.
 
 * `nodeViews`, an Object, any custom editor node views.
 

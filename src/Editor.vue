@@ -28,7 +28,7 @@ export default {
     schema: { type: Object, default: () => { return {} } },
     nodeViews: { type: Object, default: () => { return {} } },
     keyCommands: { type: Function },
-    inputs: { type: Array, default: () => { return [] } },
+    inputRules: { type: Array, default: () => { return [] } },
     plugins: { type: Array, default: () => [] },
     editorProps: { type: Object, default: () => { return {} } },
     editable: { type: Boolean, default: true },
@@ -81,7 +81,7 @@ export default {
           ...builtInPlugins({
             schema,
             keys: this.keyCommands ? this.keyCommands({ schema }) : {},
-            inputs: this.inputs
+            inputs: this.inputRules
           }),
           ...this.plugins.map(item => {
             const plugin = typeof item !== 'function'

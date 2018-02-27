@@ -48,7 +48,7 @@ const ruleTypes = [
   }
 ]
 
-export default function ({ schema: { nodes }, inputs: userInputTypes }) {
+export default function ({ schema: { nodes }, inputs }) {
   const rules = [
     ...smartQuotes,
     ellipsis,
@@ -56,13 +56,12 @@ export default function ({ schema: { nodes }, inputs: userInputTypes }) {
   ]
 
   ruleTypes.forEach(type => { // merge built-in inputs
-    if (nodes[type.name] && !userInputTypes.find(t => t[type.name])) {
+    if (nodes[type.name] && !inputs.find(t => t[type.name])) {
       rules.push(type.rule(nodes[type.name]))
     }
   })
 
-  Object.keys(userInputTypes).forEach(t => {
-    const type = userInputTypes[t]
+  inputs.forEach(type => {
     if (nodes[type.name]) rules.push(type.rule(nodes[type.name]))
   })
 
