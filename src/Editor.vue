@@ -118,6 +118,8 @@ export default {
 
     dispatchTransaction (tr) {
       if (this.interceptTransaction) tr = this.interceptTransaction(tr)
+      if (!tr) return // leave unchanged
+
       this.editor.state = this.editor.state.apply(tr)
       this.editor.view.updateState(this.editor.state)
       this.$emit(UPDATE_EVENT, this.editor.state, this.editor.schema)
