@@ -61,8 +61,8 @@ export default function ({ schema: { nodes }, inputs }) {
     }
   })
 
-  inputs.forEach(type => {
-    if (nodes[type.name]) rules.push(type.rule(nodes[type.name]))
+  inputs.forEach(initRule => {
+    rules.push(initRule(nodes))
   })
 
   return inputRules({ rules })
